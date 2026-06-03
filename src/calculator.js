@@ -1,4 +1,4 @@
-function Calculator(operator, a, b) {
+function calculator(operator, a, b) {
   switch (operator) {
     case '+':
       return a + b;
@@ -15,3 +15,5 @@ function Calculator(operator, a, b) {
       throw new Error('Invalid operator. Supported operators are: +, -, *, /.');
   }
 }
+
+module.exports = calculator;
