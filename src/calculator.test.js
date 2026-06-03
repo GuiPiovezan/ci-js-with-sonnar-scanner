@@ -24,4 +24,8 @@ describe('Calculator', () => {
   test('should throw an error for invalid operator', () => {
     expect(() => calculator('**', 10, 5)).toThrow('Invalid operator. Supported operators are: +, -, *, /, %.');
   });
+
+  test('should calculate modulus correctly', () => {
+    expect(calculator('%', 10, 3)).toBe(1);
+  });
 });
