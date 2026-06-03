@@ -14,7 +14,7 @@ function calculator(operator, a, b) {
     case '%':
       return a % b;
     default:
-      throw new Error('Invalid operator. Supported operators are: +, -, *, /.');
+      throw new Error('Invalid operator. Supported operators are: +, -, *, /, %.');
   }
 }
 

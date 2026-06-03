@@ -22,6 +22,6 @@ describe('Calculator', () => {
   });
 
   test('should throw an error for invalid operator', () => {
-    expect(() => calculator('%', 10, 5)).toThrow('Invalid operator. Supported operators are: +, -, *, /.');
+    expect(() => calculator('**', 10, 5)).toThrow('Invalid operator. Supported operators are: +, -, *, /, %.');
   });
 });
